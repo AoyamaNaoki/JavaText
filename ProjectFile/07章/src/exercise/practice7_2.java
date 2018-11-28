@@ -7,7 +7,6 @@ public class practice7_2 {
 		double mean;
 		for (int i = 0; i < val.length; i++) {
 			System.out.println(val[i]);
-			mean += val[i];
 		}
 
 	}
