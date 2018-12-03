@@ -1,18 +1,25 @@
-	package ex14_02_2;
-	public	class Card {
-		String	suit;		// カードの種類 "スペード"、"ハート"、"クラブ"、"ダイヤ"
-		int		number;		// カードの札番号  1～13
-		public	Card(String suit, int number){
+package ex14_02_2;
 
-		}
-		public	Card(String suit){		// numberは常に1とする
-			
-		}
-		public	Card(int number ){		// suitは常に”スペード”とする
-			
-		}
+public class Card {
+	String suit; // カードの種類 "スペード"、"ハート"、"クラブ"、"ダイヤ"
+	int number; // カードの札番号 1～13
 
-		String	face(){					// カードを表す文字列を返す
-			return	suit+"/"+number; 
-		}
+	public Card(String suit, int number) {
+		this.suit = suit;
+		this.number = number;
 	}
+
+	public Card(String suit) { // numberは常に1とする
+		this.suit = suit;
+		number = 1;
+	}
+
+	public Card(int number) { // suitは常に”スペード”とする
+		this.number = number;
+		suit = "スペード";
+	}
+
+	String face() { // カードを表す文字列を返す
+		return suit + "/" + number;
+	}
+}
